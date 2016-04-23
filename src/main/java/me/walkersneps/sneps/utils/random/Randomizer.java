@@ -19,7 +19,7 @@ public class Randomizer {
      *
      * @param exclusiveMax exclusive maximum number
      *
-     * @return random number 'x' where 0 <= x < exclusiveMax
+     * @return random number 'x' where 0 less or equals x less than exclusiveMax
      */
     public static int randomNumber(int exclusiveMax) {
         Random rand = new Random();
