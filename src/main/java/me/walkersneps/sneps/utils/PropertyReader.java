@@ -14,7 +14,7 @@ import java.util.Properties;
 /**
  * @author Walkersneps
  */
-public class FileReader {
+public class PropertyReader {
 
     private String FILENAME;
 
@@ -22,7 +22,7 @@ public class FileReader {
     /**
      * @param filename string containing name (or path) of the file we want to access
      */
-    public FileReader (String filename) {
+    public PropertyReader (String filename) {
         FILENAME = filename;
     }
 

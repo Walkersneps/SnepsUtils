@@ -7,22 +7,22 @@ package me.walkersneps.sneps.utils;/**
 
 import org.testng.annotations.Test;
 
+import static me.walkersneps.sneps.utils.Constants.FILEPATH;
 import static org.testng.Assert.assertEquals;
 
 /**
  * @author Walkersneps
  */
-public class FileReaderTest {
+public class PropertyReaderTest {
 
-    private final String FILEPATH = "./src/test/resources/propertyTest.properties";
-    private final String TEST1_SOLUTION_STRING = "hello";
-    private final int TEST2_SOLUTION_INT = 23;
-    private final String TEST3_SOLUTION_STRING = "testing_some_stuff";
-
-    private FileReader fr = new FileReader(FILEPATH);
+    private PropertyReader fr = new PropertyReader(FILEPATH);
 
     @Test
     public void readPropertyTest () {
+        String TEST1_SOLUTION_STRING = "hello";
+        String TEST3_SOLUTION_STRING = "testing_some_stuff";
+        int TEST2_SOLUTION_INT = 23;
+
         assertEquals(fr.readProperty("test1"), TEST1_SOLUTION_STRING);
         assertEquals(PrimitiveConverter.stringToInt(fr.readProperty("test2")), TEST2_SOLUTION_INT);
         assertEquals(fr.readProperty("test3"), TEST3_SOLUTION_STRING);
