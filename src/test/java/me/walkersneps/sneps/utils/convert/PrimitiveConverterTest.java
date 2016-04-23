@@ -1,5 +1,6 @@
-package me.walkersneps.sneps.utils;
+package me.walkersneps.sneps.utils.convert;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -20,7 +21,7 @@ public class PrimitiveConverterTest {
 
     @Test
     public void stringToIntTest () {
-        assertEquals(PrimitiveConverter.stringToInt("0"), 0);
+        Assert.assertEquals(PrimitiveConverter.stringToInt("0"), 0);
         assertEquals(PrimitiveConverter.stringToInt("23382"), 23382);
         assertNotEquals(PrimitiveConverter.stringToInt("33"), 342);
     }

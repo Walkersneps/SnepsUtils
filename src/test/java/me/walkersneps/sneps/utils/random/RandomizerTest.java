@@ -1,4 +1,4 @@
-package me.walkersneps.sneps.utils;
+package me.walkersneps.sneps.utils.random;
 
 /**
  * Created by Walkersneps on 23/04/16
@@ -7,6 +7,7 @@ package me.walkersneps.sneps.utils;
  */
 
 
+import me.walkersneps.sneps.utils.random.Randomizer;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;

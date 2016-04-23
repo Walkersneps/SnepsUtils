@@ -11,7 +11,7 @@ package me.walkersneps.sneps.utils;
  */
 public class Constants {
 
-    static final String FILEPATH = "./src/test/resources/propertyTest.properties";
+    public static final String FILEPATH = "./src/test/resources/propertyTest.properties";
 
 
 } //end of class

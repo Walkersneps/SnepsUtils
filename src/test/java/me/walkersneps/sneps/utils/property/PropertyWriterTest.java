@@ -1,4 +1,4 @@
-package me.walkersneps.sneps.utils;
+package me.walkersneps.sneps.utils.property;
 
 /**
  * Created by Walkersneps on 23/04/16
@@ -7,6 +7,8 @@ package me.walkersneps.sneps.utils;
  */
 
 
+import me.walkersneps.sneps.utils.property.PropertyReader;
+import me.walkersneps.sneps.utils.property.PropertyWriter;
 import org.testng.annotations.Test;
 
 import static me.walkersneps.sneps.utils.Constants.FILEPATH;

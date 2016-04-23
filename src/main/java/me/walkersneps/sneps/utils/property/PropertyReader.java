@@ -1,4 +1,4 @@
-package me.walkersneps.sneps.utils;
+package me.walkersneps.sneps.utils.property;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package me.walkersneps.sneps.utils;
+package me.walkersneps.sneps.utils.random;
 
 /**
  * Created by Walkersneps on 23/04/16
