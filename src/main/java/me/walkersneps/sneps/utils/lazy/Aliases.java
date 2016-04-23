@@ -16,12 +16,13 @@ public class Aliases {
 
     /**
      * Alias for eprint in PrintAlias
-     * @see PrintAlias
      *
-     * @param stringtoPrint argument 'text' of PrintAlias.eprint
+     * @see PrintAlias#eprint(String text)
+     *
+     * @param stringToPrint argument 'text' of PrintAlias.eprint
      */
-    public void p (String stringtoPrint) {
-        PrintAlias.eprint(stringtoPrint);
+    public void p (String stringToPrint) {
+        PrintAlias.eprint(stringToPrint);
     }
 
 

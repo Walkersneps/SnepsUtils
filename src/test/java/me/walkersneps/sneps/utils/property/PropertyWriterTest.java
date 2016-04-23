@@ -7,8 +7,6 @@ package me.walkersneps.sneps.utils.property;
  */
 
 
-import me.walkersneps.sneps.utils.property.PropertyReader;
-import me.walkersneps.sneps.utils.property.PropertyWriter;
 import org.testng.annotations.Test;
 
 import static me.walkersneps.sneps.utils.Constants.FILEPATH;

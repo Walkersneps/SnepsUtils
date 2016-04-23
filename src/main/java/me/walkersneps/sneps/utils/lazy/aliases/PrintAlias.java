@@ -16,7 +16,7 @@ public class PrintAlias {
      * Just an alias to System.out.println()
      * Just because I'm a lazy boy
      *
-     * @param text parameter for System.out.println(<font color="red">text</font>)
+     * @param text parameter for System.out.println(<font style="color:red">text</font>)
      */
     public static void eprint (String text) {
         System.out.println(text);

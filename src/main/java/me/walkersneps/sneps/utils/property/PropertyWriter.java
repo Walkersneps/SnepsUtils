@@ -30,6 +30,8 @@ public class PropertyWriter {
     /**
      * Writes a new property
      *
+     * <p>ISSUE: It completely overwrites the file, not only the single property it should edit</p>
+     *
      * @param key key for the value we want to (over)write
      *
      * @param value value for the chosen key
