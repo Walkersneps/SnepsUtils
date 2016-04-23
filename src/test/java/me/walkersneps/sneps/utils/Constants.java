@@ -9,7 +9,7 @@ package me.walkersneps.sneps.utils;
 /**
  * @author Walkersneps
  */
-class Constants {
+public class Constants {
 
     static final String FILEPATH = "./src/test/resources/propertyTest.properties";
 
