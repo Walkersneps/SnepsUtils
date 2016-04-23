@@ -9,7 +9,7 @@ package me.walkersneps.sneps.utils;
 /**
  * @author Walkersneps
  */
-class PrimitiveConverter {
+public class PrimitiveConverter {
 
     /**
      * Converts a string to an int type variable
@@ -18,7 +18,7 @@ class PrimitiveConverter {
      *
      * @return first integer found in the input string
      */
-    static int stringToInt (String str){
+    public static int stringToInt (String str){
         return Integer.parseInt(str);
     }
 
@@ -29,7 +29,7 @@ class PrimitiveConverter {
      *
      * @return first character in the input string
      */
-    static char stringToChar (String str) {
+    public static char stringToChar (String str) {
         return str.charAt(0);
     }
 
@@ -40,7 +40,7 @@ class PrimitiveConverter {
      *
      * @return string containing the passed character
      */
-    static String charToString (char c) {
+    public static String charToString (char c) {
         return Character.toString(c);
     }
 
@@ -51,7 +51,7 @@ class PrimitiveConverter {
      *
      * @return string containing the passed integer
      */
-    static String intToString (int i) {
+    public static String intToString (int i) {
         return Integer.toString(i);
     }
 
