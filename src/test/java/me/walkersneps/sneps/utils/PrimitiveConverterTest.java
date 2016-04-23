@@ -20,33 +20,33 @@ public class PrimitiveConverterTest {
 
     @Test
     public void stringToIntTest () {
-        assertEquals(0, PrimitiveConverter.stringToInt("0"));
-        assertEquals(23382, PrimitiveConverter.stringToInt("23382"));
-        assertNotEquals(342, PrimitiveConverter.stringToInt("33"));
+        assertEquals(PrimitiveConverter.stringToInt("0"), 0);
+        assertEquals(PrimitiveConverter.stringToInt("23382"), 23382);
+        assertNotEquals(PrimitiveConverter.stringToInt("33"), 342);
     }
 
     @Test
     public void stringToCharTest () {
-        assertEquals('!', PrimitiveConverter.stringToChar("!"));
-        assertEquals('2', PrimitiveConverter.stringToChar("2"));
-        assertEquals('c', PrimitiveConverter.stringToChar("chocolate!"));
-        assertEquals(FORWARDSLASH_CHARCODE, PrimitiveConverter.stringToChar("/"));
+        assertEquals(PrimitiveConverter.stringToChar("!"), '!');
+        assertEquals(PrimitiveConverter.stringToChar("2"), '2');
+        assertEquals(PrimitiveConverter.stringToChar("chocolate!"), 'c');
+        assertEquals(PrimitiveConverter.stringToChar("/"), FORWARDSLASH_CHARCODE);
     }
 
     @Test
     public void charToStringTest () {
-        assertEquals("!", PrimitiveConverter.charToString('!'));
-        assertEquals("3", PrimitiveConverter.charToString('3'));
-        assertEquals("(", PrimitiveConverter.charToString(OPEN_PARENTHESIS_CHARCODE));
-        assertEquals("/", PrimitiveConverter.charToString(FORWARDSLASH_CHARCODE));
-        assertEquals("A", PrimitiveConverter.charToString(CAPITAL_A_CHARCODE));
+        assertEquals(PrimitiveConverter.charToString('!'), "!");
+        assertEquals(PrimitiveConverter.charToString('3'), "3");
+        assertEquals(PrimitiveConverter.charToString(OPEN_PARENTHESIS_CHARCODE), "(");
+        assertEquals(PrimitiveConverter.charToString(FORWARDSLASH_CHARCODE), "/");
+        assertEquals(PrimitiveConverter.charToString(CAPITAL_A_CHARCODE), "A");
     }
 
     @Test
     public void intToStringTest () {
-        assertEquals("0", PrimitiveConverter.intToString(0));
-        assertEquals("134", PrimitiveConverter.intToString(134));
-        assertEquals("233433", PrimitiveConverter.intToString(233433));
+        assertEquals(PrimitiveConverter.intToString(0), "0");
+        assertEquals(PrimitiveConverter.intToString(134), "134");
+        assertEquals(PrimitiveConverter.intToString(233433), "233433");
     }
 
 
