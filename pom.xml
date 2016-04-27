@@ -5,9 +5,53 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.walkersneps.snepsutils</groupId>
+    <groupId>me.walkersneps.sneps.utils</groupId>
     <artifactId>snepsutils</artifactId>
-    <version>0.1-build_8</version>
+    <version>0.1.8</version>
+    <packaging>jar</packaging>
+
+    <name>SnepsUtils</name>
+    <description>A compilation of utilities, macros and aliases for common commands</description>
+    <url>https://github.com/Walkersneps/SnepsUtils</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>walkersneps</id>
+            <name>Walter Carli</name>
+            <email>walkersneps@gmail.com</email>
+            <organization>Walkersneps</organization>
+            <organizationUrl>https://github.com/Walkersneps/</organizationUrl>
+            <roles>
+                <role>Founder</role>
+                <role>Developer</role>
+                <role>Maintainer</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/Walkersneps/SnepsUtils/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Travis-CI</system>
+        <url>https://travis-ci.org/Walkersneps/SnepsUtils</url>
+    </ciManagement>
+
+    <scm>
+        <connection>scm:git:https://github.com/Walkersneps/SnepsUtils.git</connection>
+        <developerConnection>scm:git:https://github.com/Walkersneps/SnepsUtils.git</developerConnection>
+        <url>https://github.com/Walkersneps/SnepsUtils.git</url>
+    </scm>
 
 
     <dependencies>
@@ -21,5 +65,67 @@
 
     </dependencies>
 
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-source</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.3</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
 
 </project>
+
+
+
+
+
+
+
+
+
+
+
+
+
