@@ -14,7 +14,7 @@ package me.walkersneps.sneps.utils.info;
  */
 public class Info {
 
-    private final String version = "0.1.9-SNAPSHOT";
+    private final String version = "0.1.9_6-SNAPSHOT";
 
     public String getVersion () {
         return version;

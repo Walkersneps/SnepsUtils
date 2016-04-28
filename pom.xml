@@ -7,7 +7,7 @@
 
     <groupId>com.github.walkersneps.sneps.utils</groupId>
     <artifactId>snepsutils</artifactId>
-    <version>0.1.9-SNAPSHOT</version>
+    <version>0.1.9_6-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>SnepsUtils</name>
@@ -59,6 +59,10 @@
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
     </distributionManagement>
 
 
@@ -73,6 +77,8 @@
 
     </dependencies>
 
+
+
     <profiles>
 
         <profile>
@@ -86,11 +92,23 @@
 
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.19.1</version>
+                        <executions>
+                            <execution>
+                                <phase>test</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
                         <version>3.0.0</version>
                         <executions>
                             <execution>
                                 <id>attach-source</id>
+                                <phase>package</phase>
                                 <goals>
                                     <goal>jar-no-fork</goal>
                                 </goals>
@@ -105,6 +123,7 @@
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
+                                <phase>package</phase>
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>
@@ -135,8 +154,18 @@
                         <configuration>
                             <serverId>ossrh</serverId>
                             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                            <stagingDescription>${project.version}</stagingDescription>
+                            <autoReleaseAfterClose>false</autoReleaseAfterClose>
                         </configuration>
+                        <executions>
+                            <execution>
+                                <id>deploy-to-sonatype</id>
+                                <phase>deploy</phase>
+                                <goals>
+                                    <goal>deploy</goal>
+                                </goals>
+                            </execution>
+                        </executions>
                     </plugin>
 
                 </plugins>
