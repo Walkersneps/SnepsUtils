@@ -22,6 +22,8 @@ public class PropertyWriterTest {
 
     @Test
     public void writePropertyTest () {
+        System.out.println("Testing method 'writeProperty()' in class PropertyWriter.");
+
         String pKey = "writingTestKey";
         String pValue = "writingTestValue";
 
@@ -31,19 +33,32 @@ public class PropertyWriterTest {
         //hehe I'm tricking it :D
         pw.writeProperty(pValue, pKey);
         assertEquals(pr.readProperty(pValue), pKey);
+
+        System.out.println("Done!");
+        System.out.println();
     }
 
     @Test
     public void getFILENAMETest () {
+        System.out.println("Testing method 'getFILENAME()' in class PropertyWriter.");
+
         assertEquals(pw.getFILENAME(), FILEPATH);
+
+        System.out.println("Done!");
+        System.out.println();
     }
 
     @Test
     public void setFILENAMETest () {
+        System.out.println("Testing method 'setFILENAME()' in class PropertyWriter.");
+
         String newFilename = "cheeky filename!";
         pw.setFILENAME(newFilename);
         assertEquals(pw.getFILENAME(), newFilename);
         pw.setFILENAME(FILEPATH);
+
+        System.out.println("Done!");
+        System.out.println();
     }
 
 

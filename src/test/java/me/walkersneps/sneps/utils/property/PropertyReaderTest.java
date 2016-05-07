@@ -22,6 +22,8 @@ public class PropertyReaderTest {
 
     @Test
     public void readPropertyTest () {
+        System.out.println("Testing method 'readProperty()' in class PropertyReader and 'writeProperty' in class PropertyWriter.");
+
         String TEST1_SOLUTION_STRING = "hello";
         String TEST2_SOLUTION_STRING = "23";
         String TEST3_SOLUTION_STRING = "testing_some_stuff";
@@ -35,19 +37,32 @@ public class PropertyReaderTest {
 
         pw.writeProperty("test3", TEST3_SOLUTION_STRING);
         assertEquals(fr.readProperty("test3"), TEST3_SOLUTION_STRING);
+
+        System.out.println("Done!");
+        System.out.println();
     }
 
     @Test
     public void getFILENAMETest () {
+        System.out.println("Testing method 'getFILENAME()' in class PropertyReader.");
+
         assertEquals(fr.getFILENAME(), FILEPATH);
+
+        System.out.println("Done!");
+        System.out.println();
     }
 
     @Test
     public void setFILENAMETest () {
+        System.out.println("Testing method 'setFILENAME()' in class PropertyReader.");
+
         String newFilename = "cheeky filename!";
         fr.setFILENAME(newFilename);
         assertEquals(fr.getFILENAME(), newFilename);
         fr.setFILENAME(FILEPATH);
+
+        System.out.println("Done!");
+        System.out.println();
     }
 
 

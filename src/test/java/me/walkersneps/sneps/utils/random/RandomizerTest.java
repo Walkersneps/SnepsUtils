@@ -7,7 +7,6 @@ package me.walkersneps.sneps.utils.random;
  */
 
 
-import me.walkersneps.sneps.utils.random.Randomizer;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
@@ -19,6 +18,7 @@ public class RandomizerTest {
 
     @Test
     public void randomNumberTest () {
+        System.out.println("Testing method 'randomNumber()' in class Randomizer.");
 
         //since it's random, we better test it several times to get the most different results as possible
         for (byte i = 0; i < 10; i++) {
@@ -34,6 +34,9 @@ public class RandomizerTest {
             int t = Randomizer.randomNumber(1);
             assertFalse(t > 0 | t < 0);
         }
+
+        System.out.println("Done!");
+        System.out.println();
     }
 
 
