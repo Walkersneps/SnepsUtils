@@ -7,21 +7,13 @@
 
     <groupId>com.github.walkersneps.sneps.utils</groupId>
     <artifactId>snepsutils</artifactId>
-    <version>0.1.10</version>
+    <version>0.1.11</version>
     <packaging>jar</packaging>
 
     <name>SnepsUtils</name>
     <description>A compilation of utilities, macros and aliases for common commands</description>
     <url>https://github.com/Walkersneps/SnepsUtils</url>
 
-
-    <repositories>
-        <repository>
-            <id>central</id>
-            <name>bintray</name>
-            <url>http://jcenter.bintray.com</url>
-        </repository>
-    </repositories>
 
 
     <licenses>
@@ -94,13 +86,6 @@
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
-        </dependency>
-
-        <dependency>
-            <groupId>net.swisstech</groupId>
-            <artifactId>bitly-api-client</artifactId>
-            <version>0.8.0</version>
-            <type>pom</type>
         </dependency>
 
     </dependencies>
