@@ -19,6 +19,13 @@ public class PrimitiveConverterTest {
     private static final char FORWARDSLASH_CHARCODE = 47;
     private static final char CAPITAL_A_CHARCODE = 65;
 
+    private static final int BIG_NEGATIVE_INT = -200;
+    private static final int BIG_POSITIVE_INT = 230;
+    private static final int ADEQUATE_NEGATIVE_INT = -87;
+    private static final int ADEQUATE_POSITIVE_INT = 103;
+    private static final int BORDERLINE_SMALL_INT = -128;
+    private static final int BORDERLINE_BIG_INT = 127;
+
     @Test
     public void stringToIntTest () {
         System.out.println("Testing method 'stringToInt()' in class PrimitiveConverter.");
@@ -69,6 +76,31 @@ public class PrimitiveConverterTest {
         System.out.println("Done!");
         System.out.println();
     }
+
+    @Test
+    public void intToByteTest () {
+        System.out.println("Testing method 'intToByte()' in class PrimitiveConverter.");
+
+        assertEquals(PrimitiveConverter.intToByte(BIG_NEGATIVE_INT), 0);
+        assertEquals(PrimitiveConverter.intToByte(BIG_POSITIVE_INT), 0);
+
+        assertEquals(PrimitiveConverter.intToByte(ADEQUATE_NEGATIVE_INT), -87);
+        assertEquals(PrimitiveConverter.intToByte(ADEQUATE_POSITIVE_INT), 103);
+        assertEquals(PrimitiveConverter.intToByte(BORDERLINE_BIG_INT), 127);
+        assertEquals(PrimitiveConverter.intToByte(BORDERLINE_SMALL_INT), -128);
+
+        System.out.println("Done!");
+        System.out.println();
+    }
+
+
+
+
+
+
+
+
+
 
 
 } //end of class

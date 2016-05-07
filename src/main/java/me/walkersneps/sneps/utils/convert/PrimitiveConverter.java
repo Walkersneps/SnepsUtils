@@ -55,4 +55,22 @@ public class PrimitiveConverter {
         return Integer.toString(i);
     }
 
+    /**
+     * Converts an integer in a byte type variable
+     *
+     * @param i the input integer
+     *
+     * @return resulting byte -- <font style="color:red">returns 0 if the input exceeds 8 bit size!</font>
+     */
+    public static byte intToByte (int i) {
+
+        //check if we can do it
+        if (i >= -128 && i <= 127) {
+            return (byte)i;
+
+        } else {
+            return 0;
+        }
+    }
+
 } //end of class
