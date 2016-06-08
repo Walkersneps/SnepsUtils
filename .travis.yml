@@ -6,12 +6,12 @@ jdk:
   - oraclejdk7
   
 install:
-  - curl https://www.jpm4j.org/install/script | sh
-  - jpm install com.codacy:codacy-coverage-reporter:assembly
+  - git clone https://github.com/codacy/codacy-coverage-reporter.git
+  - sbt assembly
   
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - codacy-coverage-reporter -l Java -r ./target/site/jacoco/jacoco.xml
+  - java -cp ../codacy-coverage-reporter/target/codacy-coverage-reporter-assembly-1.0.4.jar com.codacy.CodacyCoverageReporter -l Java -r ./SnepsUtils/target/site/jacoco/jacoco.xml
   
 notifications:
   email:
