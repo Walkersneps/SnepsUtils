@@ -4,4 +4,5 @@
 - [ ] Youtube API
 - [ ] Twitter API
 - [ ] URL Shortener
-- [ ] Set up codecov.io
+- [x] Set up codecov.io
+- [ ] Make proper .codecov.yml file
