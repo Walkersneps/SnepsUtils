@@ -12,6 +12,7 @@ install:
   - cd codacy-coverage-reporter
   - sbt assembly
   - cd ../Walkersneps/SnepsUtils
+  - ls ../../codacy-coverage-reporter/target
   
 after_success:
   - bash <(curl -s https://codecov.io/bash)
