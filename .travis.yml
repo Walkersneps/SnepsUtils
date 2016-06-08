@@ -6,12 +6,16 @@ jdk:
   - oraclejdk7
   
 install:
+  - cd ../..
+  - pwd
   - git clone https://github.com/codacy/codacy-coverage-reporter.git
+  - cd codacy-coverage-reporter
   - sbt assembly
+  - cd ../Walkersneps/SnepsUtils
   
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - java -cp ../codacy-coverage-reporter/target/codacy-coverage-reporter-assembly-1.0.4.jar com.codacy.CodacyCoverageReporter -l Java -r ./SnepsUtils/target/site/jacoco/jacoco.xml
+  - java -cp ../../codacy-coverage-reporter/target/codacy-coverage-reporter-assembly-1.0.4.jar com.codacy.CodacyCoverageReporter -l Java -r ../Walkersneps/SnepsUtils/target/site/jacoco/jacoco.xml
   
 notifications:
   email:
