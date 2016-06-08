@@ -6,3 +6,4 @@
 - [ ] URL Shortener
 - [x] Set up codecov.io
 - [ ] Make proper .codecov.yml file
+- [ ] Setup Codacy
