@@ -5,8 +5,13 @@ jdk:
   - oraclejdk8
   - oraclejdk7
   
+install:
+  - curl https://www.jpm4j.org/install/script | sh
+  - jpm install com.codacy:codacy-coverage-reporter:assembly
+  
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - codacy-coverage-reporter -l Java -r ./target/site/jacoco/jacoco.xml
   
 notifications:
   email:
