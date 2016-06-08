@@ -6,7 +6,6 @@ package me.walkersneps.sneps.utils.property;/**
 
 
 import me.walkersneps.sneps.utils.convert.PrimitiveConverter;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static me.walkersneps.sneps.utils.Constants.FILEPATH;
@@ -33,7 +32,7 @@ public class PropertyReaderTest {
         assertEquals(fr.readProperty("test1"), TEST1_SOLUTION_STRING);
 
         pw.writeProperty("test2", TEST2_SOLUTION_STRING);
-        Assert.assertEquals(PrimitiveConverter.stringToInt(fr.readProperty("test2")), TEST2_SOLUTION_INT);
+        assertEquals(PrimitiveConverter.stringToInt(fr.readProperty("test2")), TEST2_SOLUTION_INT);
 
         pw.writeProperty("test3", TEST3_SOLUTION_STRING);
         assertEquals(fr.readProperty("test3"), TEST3_SOLUTION_STRING);
