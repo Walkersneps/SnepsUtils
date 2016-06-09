@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
+import static org.testng.Assert.assertTrue;
 
 /**
  * Created by Walkersneps on 23/04/16
@@ -90,6 +91,12 @@ public class PrimitiveConverterTest {
 
         System.out.println("Done!");
         System.out.println();
+    }
+
+    @Test
+    public void testPrimitiveConverter () {
+        PrimitiveConverter converter = new PrimitiveConverter();
+        assertTrue(converter.hello());
     }
 
 

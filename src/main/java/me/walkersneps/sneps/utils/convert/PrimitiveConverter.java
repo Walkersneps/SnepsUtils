@@ -11,6 +11,10 @@ package me.walkersneps.sneps.utils.convert;
  */
 public class PrimitiveConverter {
 
+    public boolean hello () {
+        return true;
+    }
+
     /**
      * Converts a string to an int type variable
      *
