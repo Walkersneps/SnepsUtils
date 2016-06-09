@@ -8,10 +8,11 @@
 
 A compilation of utilities, macros and aliases for common commands, just because Walkersneps is very lazy. Fuck yeah!
 
+---
 ### Use SnepsUtils in your project
 **Maven**
 
-To import the library with Apache Maven, add the following lines to your `pom.xml`, under section `<dependencies>`.
+To import the library with _Apache Maven_, add the following lines to your `pom.xml`, under section `<dependencies>`.
 ```xml
 <dependency>
     <groupId>tk.sneps.utils</groupId>
@@ -19,5 +20,5 @@ To import the library with Apache Maven, add the following lines to your `pom.xm
     <version>0.1.14</version>
 </dependency>
 ```
-Since I'll probably forget to update the code above, please make sure you're using the latest available version. You can check that on the badge under the title, or, better, at [this link](https://oss.sonatype.org/content/groups/public/tk/sneps/utils/snepsutils/ "SnepsUtils repository").
+Since I'll ~~probably~~ _definitely_ forget to update the code above, please make sure you're using the latest available version. You can check that on the badge under the title, or, better, at [this link](https://oss.sonatype.org/content/groups/public/tk/sneps/utils/snepsutils/ "SnepsUtils repository").
 
