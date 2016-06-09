@@ -95,8 +95,13 @@ public class PrimitiveConverterTest {
 
     @Test
     public void testPrimitiveConverter () {
+        System.out.println("Testing instance of class PrimitiveConverter.");
+
         PrimitiveConverter converter = new PrimitiveConverter();
         assertTrue(converter.hello());
+
+        System.out.println("Done!");
+        System.out.println();
     }
 
 
