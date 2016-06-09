@@ -22,7 +22,7 @@ public class ByteArrayCheck {
     public static boolean areAllSame(byte[] input) {
 
         //Cover the edge cases that the input array is null or has one element.
-        if (input == null || input.length == 1) {
+        if (input.length == 1) {
             return true;
         }
 

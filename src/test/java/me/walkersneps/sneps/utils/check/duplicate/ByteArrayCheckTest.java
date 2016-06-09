@@ -38,9 +38,6 @@ public class ByteArrayCheckTest {
     public void areAllSameEdgeTest () {
         System.out.println("Testing edge cases in method 'areAllSame()' in class ByteArrayCheck.");
 
-        // What happens if the array is empty?
-        Assert.assertTrue(ByteArrayCheck.areAllSame(NULL_ARRAY));
-
         // What if array only contains 1 item?
         Assert.assertTrue(ByteArrayCheck.areAllSame(ONE_ITEM_ARRAY));
 
