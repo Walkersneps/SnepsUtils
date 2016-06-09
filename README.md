@@ -5,10 +5,3 @@
 
 Walkersneps's lazy utilities
 
-
-#####Now you can import the library using maven: just add the following lines to your `pom.xml` under the `dependencies` section:
-    <dependency>
-        <groupId>com.github.walkersneps.sneps.utils</groupId>
-        <artifactId>snepsutils</artifactId>
-        <version>0.1.8</version>
-    </dependency>
