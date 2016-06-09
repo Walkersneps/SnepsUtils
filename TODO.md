@@ -5,5 +5,5 @@
 - [ ] Twitter API
 - [ ] URL Shortener
 - [x] Set up codecov.io
-- [ ] Make proper .codecov.yml file
-- [ ] Setup Codacy
+- [x] Setup Codacy
+- [ ] Write proper README
