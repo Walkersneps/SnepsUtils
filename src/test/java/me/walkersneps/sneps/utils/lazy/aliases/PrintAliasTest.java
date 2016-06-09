@@ -9,6 +9,8 @@ package me.walkersneps.sneps.utils.lazy.aliases;
 
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertTrue;
+
 /**
  * @author Walkersneps
  */
@@ -21,6 +23,7 @@ public class PrintAliasTest {
         System.out.println("Testing class PrintAlias.");
 
         PrintAlias pa = new PrintAlias();
+        assertTrue(pa.hello());
     }
 
     @Test
