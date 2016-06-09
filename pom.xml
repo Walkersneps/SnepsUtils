@@ -95,7 +95,7 @@
     <profiles>
 
         <profile>
-            <id>release</id>
+            <id>prepare-release</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
@@ -163,6 +163,21 @@
                         </executions>
                     </plugin>
 
+                </plugins>
+
+            </build>
+        </profile>
+
+
+        <profile>
+            <id>release</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+
+            <build>
+                <plugins>
+
                     <!-- Deploy to sonatype -->
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
@@ -187,7 +202,6 @@
                     </plugin>
 
                 </plugins>
-
             </build>
         </profile>
 
