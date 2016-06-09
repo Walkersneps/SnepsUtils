@@ -1,5 +1,4 @@
 # SnepsUtils
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.walkersneps.sneps.utils/snepsutils/badge.svg?style=flat)](http://mvnrepository.com/artifact/com.github.walkersneps.sneps.utils/snepsutils)
 
 [![Build Status](https://travis-ci.org/Walkersneps/SnepsUtils.svg?branch=master)](https://travis-ci.org/Walkersneps/SnepsUtils)
 [![codecov](https://codecov.io/gh/Walkersneps/SnepsUtils/branch/master/graph/badge.svg)](https://codecov.io/gh/Walkersneps/SnepsUtils)
