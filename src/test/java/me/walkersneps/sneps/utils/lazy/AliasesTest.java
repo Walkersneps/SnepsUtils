@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class AliasesTest {
 
     /*private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream(); */
 
     private static final String STRING_A = "Hi, this is STRING_A";
     private static final String STRING_B = "Bye, this is STRING_B";
@@ -23,7 +23,7 @@ public class AliasesTest {
     private static final String SPACE_STRING = " ";
 
 
-    @BeforeMethod
+    /*@BeforeMethod
     public void setUpStreams () {
         System.out.println("Setting up output streams...");
         System.setOut(new PrintStream(outContent));
@@ -45,6 +45,11 @@ public class AliasesTest {
         System.out.println("Testing class Aliases.");
 
         Aliases a = new Aliases();
+
+        a.p(STRING_A);
+        a.p(STRING_B);
+        a.p(EMPTY_STRING);
+        a.p(SPACE_STRING);
 
         /*a.p(STRING_A);
         assertEquals(outContent.toString(), STRING_A);*/
