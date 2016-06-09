@@ -16,7 +16,7 @@ install:
   
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - java -cp ../../codacy-coverage-reporter/target/codacy-coverage-reporter-assembly-1.0.5.jar com.codacy.CodacyCoverageReporter -l Java -r ../Walkersneps/SnepsUtils/target/site/jacoco/jacoco.xml
+  - java -cp ../../codacy-coverage-reporter/target/codacy-coverage-reporter-assembly-1.0.5.jar com.codacy.CodacyCoverageReporter -l Java -r ./target/site/jacoco/jacoco.xml
   
 notifications:
   email:
