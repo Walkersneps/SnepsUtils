@@ -5,6 +5,9 @@ jdk:
   - oraclejdk8
   - oraclejdk7
   
+git:
+  depth: 4
+  
 install:
   - cd ../..
   - pwd
