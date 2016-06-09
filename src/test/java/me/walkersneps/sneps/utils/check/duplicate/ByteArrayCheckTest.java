@@ -51,7 +51,7 @@ public class ByteArrayCheckTest {
 
     @Test
     public void testByteArrayCheck () {
-        System.out.println("Testing instance of class PrimitiveConverter.");
+        System.out.println("Testing instance of class ByteArrayCheck.");
 
         ByteArrayCheck bac = new ByteArrayCheck();
         Assert.assertTrue(bac.hello());
