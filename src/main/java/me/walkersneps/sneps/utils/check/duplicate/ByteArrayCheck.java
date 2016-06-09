@@ -22,19 +22,30 @@ public class ByteArrayCheck {
     public static boolean areAllSame(byte[] input) {
 
         //Cover the edge cases that the input array is null or has one element.
-        if (input == null || input.length == 1)
+        if (input == null || input.length == 1) {
             return true;
+        }
 
         int compare = input[0]; //Compare to the first element of the input array.
 
         //Check from the second element through the end of the input array.
         for (int i = 1; i < input.length; i++) {
-            if (input[i] != compare) //if we find a difference:
+            if (input[i] != compare) { //if we find a difference:
                 return false;
+            }
         }
 
         return true;
 
+    }
+
+
+    /**
+     * Always returns true
+     * @return true
+     */
+    public boolean hello () {
+        return true;
     }
 
 
