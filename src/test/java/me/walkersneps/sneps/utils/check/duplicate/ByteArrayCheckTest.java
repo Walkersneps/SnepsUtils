@@ -13,11 +13,13 @@ import org.testng.annotations.Test;
 /**
  * @author Walkersneps
  */
-public class CheckInByteArrayTest {
+public class ByteArrayCheckTest {
 
     private static final byte[] ONLY_HAS_SAME_ELEMENT = {2, 2, 2, 2, 2, 2, 2, 2, 2};
     private static final byte[] ONLY_HAS_SAME_ELEMENT_SHORT = {2, 2};
     private static final byte[] DIFFERENT_ELEMENTS = {1, 2, 3, 7, 9};
+    private static final byte[] NULL_ARRAY = {};
+    private static final byte[] ONE_ITEM_ARRAY = {7};
 
     @Test
     public void areAllSameElementTest () {
@@ -30,6 +32,27 @@ public class CheckInByteArrayTest {
 
         System.out.println("Done!");
         System.out.println();
+    }
+
+    @Test
+    public void areAllSameEdgeTest () {
+        System.out.println("Testing edge cases in method 'areAllSame()' in class ByteArrayCheck.");
+
+        // What happens if the array is empty?
+        Assert.assertTrue(ByteArrayCheck.areAllSame(NULL_ARRAY));
+
+        // What if array only contains 1 item?
+        Assert.assertTrue(ByteArrayCheck.areAllSame(ONE_ITEM_ARRAY));
+
+
+        System.out.println("Done!");
+        System.out.println();
+    }
+
+    @Test
+    public void testByteArrayCheck () {
+        ByteArrayCheck bac = new ByteArrayCheck();
+
     }
 
 

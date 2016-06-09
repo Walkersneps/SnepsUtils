@@ -11,6 +11,10 @@ package me.walkersneps.sneps.utils.convert;
  */
 public class PrimitiveConverter {
 
+    /**
+     * Always returns true
+     * @return true
+     */
     public boolean hello () {
         return true;
     }
