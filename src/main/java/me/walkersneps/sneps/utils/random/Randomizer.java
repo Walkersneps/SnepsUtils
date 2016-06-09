@@ -27,4 +27,13 @@ public class Randomizer {
     }
 
 
+    /**
+     * Always returns true
+     * @return true
+     */
+    public boolean hello () {
+        return true;
+    }
+
+
 } //end of class

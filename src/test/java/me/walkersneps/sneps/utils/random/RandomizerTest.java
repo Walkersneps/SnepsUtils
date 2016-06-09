@@ -39,5 +39,16 @@ public class RandomizerTest {
         System.out.println();
     }
 
+    @Test
+    public void testRandomizer () {
+        System.out.println("Testing instance of class Randomizer.");
+
+        Randomizer rndm = new Randomizer();
+        assertTrue(rndm.hello());
+
+        System.out.println("Done!");
+        System.out.println();
+    }
+
 
 } //end of class
