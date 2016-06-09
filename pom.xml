@@ -7,7 +7,7 @@
 
     <groupId>tk.sneps.utils</groupId>
     <artifactId>snepsutils</artifactId>
-    <version>0.1.13</version>
+    <version>0.1.14</version>
     <packaging>jar</packaging>
 
     <name>SnepsUtils</name>
@@ -194,7 +194,7 @@
                             <stagingDescription>${project.version}</stagingDescription>
                             <autoReleaseAfterClose>false</autoReleaseAfterClose>
                         </configuration>
-                        <executions>
+                        <!-- <executions>
                             <execution>
                                 <id>deploy-to-sonatype</id>
                                 <phase>deploy</phase>
@@ -202,7 +202,7 @@
                                     <goal>deploy</goal>
                                 </goals>
                             </execution>
-                        </executions>
+                        </executions> -->
                     </plugin>
 
                 </plugins>
