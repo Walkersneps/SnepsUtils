@@ -203,15 +203,6 @@
                             <stagingDescription>${project.version}</stagingDescription>
                             <autoReleaseAfterClose>false</autoReleaseAfterClose>
                         </configuration>
-                        <!-- <executions>
-                            <execution>
-                                <id>deploy-to-sonatype</id>
-                                <phase>deploy</phase>
-                                <goals>
-                                    <goal>deploy</goal>
-                                </goals>
-                            </execution>
-                        </executions> -->
                     </plugin>
 
                 </plugins>
