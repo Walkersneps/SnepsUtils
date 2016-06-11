@@ -7,7 +7,7 @@
 
     <groupId>tk.sneps.utils</groupId>
     <artifactId>snepsutils</artifactId>
-    <version>0.1.15.0-f3</version>
+    <version>0.1.15.0-f.URLSHRINK</version>
     <packaging>jar</packaging>
 
     <name>SnepsUtils</name>
