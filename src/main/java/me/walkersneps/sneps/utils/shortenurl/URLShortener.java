@@ -16,22 +16,30 @@ import com.google.api.services.urlshortener.UrlshortenerScopes;
 import com.google.api.services.urlshortener.model.Url;
 
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * @author Walkersneps
  */
 public class URLShortener {
 
+
     private static Urlshortener newUrlshortener () {
-        AppIdentityCredential credential = new AppIdentityCredential(Arrays.asList(UrlshortenerScopes.URLSHORTENER));
+        AppIdentityCredential credential = new AppIdentityCredential(Collections.singletonList(UrlshortenerScopes.URLSHORTENER));
         return new Urlshortener.Builder(new UrlFetchTransport(), new JacksonFactory(), credential).build();
     }
 
 
-
-
-    protected String shrink (String longUrl) throws IOException {
+    /**
+     * Shrinks an URL with Google API
+     *
+     * @param longUrl the URL to shrink
+     *
+     * @return the shortened URL
+     *
+     * @throws IOException
+     */
+    public String shrink (String longUrl) throws IOException {
 
         Urlshortener shortener = newUrlshortener();
 
