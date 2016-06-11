@@ -7,7 +7,7 @@
 
     <groupId>tk.sneps.utils</groupId>
     <artifactId>snepsutils</artifactId>
-    <version>0.1.15.0-f1</version>
+    <version>0.1.15.0-f2</version>
     <packaging>jar</packaging>
 
     <name>SnepsUtils</name>
