@@ -11,7 +11,6 @@ A compilation of utilities, macros and aliases for common commands, just because
 ---
 ### Use SnepsUtils in your project
 ######Maven
-
 To import the library with _Apache Maven_, add the following lines to your `pom.xml`, under section `<dependencies>`.
 ```xml
 <dependency>
@@ -24,4 +23,11 @@ Since I'll ~~probably~~ _definitely_ forget to update the code above, please mak
 
 ######Other Systems
 To import SnepsUtils with other dependency managers, like _Buildr, Ivy, Grape, Gradle/Sails, SBT_ or _Leiningen_, please use the auto-generated snippets available on [Maven Central search engine](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22tk.sneps.utils%22 "Maven Central Repository search engine").
+
+######Manually
+Download latest compiled classes:
+```bash
+curl -L "http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=tk.sneps.utils&a=snepsutils&v=LATEST" -o snepsutils.jar
+```
+Then import snepsutils.jar as a project library in your IDE.
 
