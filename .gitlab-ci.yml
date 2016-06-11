@@ -1,0 +1,11 @@
+before_script:
+  - apt-get update && apt-get install openjdk-8-jdk
+  - echo $JAVA_HOME
+  - wget http://mirrors.muzzy.it/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+  - tar xzvf apache-maven-3.3.9-bin.tar.gz
+  - export PATH="$PATH:$(pwd)/apache-maven-3.3.9/bin"
+  - mvn -v
+  
+test-snepsutils:
+  script:
+    - mvn clean validate compile test
