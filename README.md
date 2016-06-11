@@ -31,3 +31,5 @@ curl -L "http://repository.sonatype.org/service/local/artifact/maven/redirect?r=
 ```
 Then import snepsutils.jar as a project library in your IDE.
 
+You can also click on [this link](http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=tk.sneps.utils&a=snepsutils&v=LATEST "Download latest jar package") to download the latest jar package directly from your browser.
+
