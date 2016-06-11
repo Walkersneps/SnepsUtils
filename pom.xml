@@ -181,6 +181,8 @@
 
 
         <profile>
+            <!-- WARNING! IF THIS PROFILE IS ENABLED, THE STAGING REPOSITORY WILL BE CLOSED! DON'T DO IT UNLESS YOU'RE SURE! -->
+
             <id>release</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
