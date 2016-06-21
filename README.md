@@ -22,8 +22,8 @@ To import the library with _Apache Maven_, add the following lines to your `pom.
 ```
 Since I'll ~~probably~~ _definitely_ forget to update the code above, please make sure you're using the latest available version. You can check that on the badge under the title, or, better, at [this link](https://oss.sonatype.org/content/groups/public/tk/sneps/utils/snepsutils/ "SnepsUtils repository").
 
-######Other Systems
-To import SnepsUtils with other dependency managers, like _Buildr, Ivy, Grape, Gradle/Sails, SBT_ or _Leiningen_, please use the auto-generated snippets available on [Maven Central search engine](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22tk.sneps.utils%22 "Maven Central Repository search engine").
+######Other build tools
+To import SnepsUtils with other dependency managers, like _Buildr_, _Ivy_, _Grape_, _Gradle/Sails_, _SBT_ or _Leiningen_, you can use the auto-generated snippets available on the page linked on the badge, but that's kinda slow in indexing new versions. If you wanna make sure to get the latest version, use [the official Maven central search engine](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22tk.sneps.utils%22 "Maven Central Repository search engine"), which is updated more frequently, but is a bit more technical.
 
 ######Manually
 Download latest compiled classes:
@@ -32,5 +32,5 @@ curl -L "http://repository.sonatype.org/service/local/artifact/maven/redirect?r=
 ```
 Then import snepsutils.jar as a project library in your IDE.
 
-You can also click on [this link](http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=tk.sneps.utils&a=snepsutils&v=LATEST "Download latest jar package") to download the latest jar package directly from your browser.
+You can also click on [this link](http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=tk.sneps.utils&a=snepsutils&v=LATEST "Download latest jar package") to download the latest jar package from your browser.
 
