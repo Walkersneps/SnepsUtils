@@ -10,7 +10,7 @@ A compilation of utilities, macros and aliases for common commands, just because
 
 ---
 ### Use SnepsUtils in your project
-**Maven**
+######Maven
 
 To import the library with _Apache Maven_, add the following lines to your `pom.xml`, under section `<dependencies>`.
 ```xml
@@ -21,4 +21,8 @@ To import the library with _Apache Maven_, add the following lines to your `pom.
 </dependency>
 ```
 Since I'll ~~probably~~ _definitely_ forget to update the code above, please make sure you're using the latest available version. You can check that on the badge under the title, or, better, at [this link](https://oss.sonatype.org/content/groups/public/tk/sneps/utils/snepsutils/ "SnepsUtils repository").
+
+######Other build tools
+
+The link on the badge will take you to a nice page where you can easily get snippets for your preferred tool, but it's kinda slow in indexing new versions. If you wanna make sure to get the latest version, use [the official maven central search engine](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22snepsutils%22 "Maven central repo search engine"), which is updated more frequently, but is a bit more technical.
 
