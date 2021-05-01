@@ -1,5 +1,7 @@
 # SnepsUtils
 
+## ⚠ Abandoned Project ⚠ 
+
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/tk.sneps.utils/snepsutils/badge.svg?style=flat)](http://mvnrepository.com/artifact/tk.sneps.utils/snepsutils)
 
 [![Build Status](https://travis-ci.org/Walkersneps/SnepsUtils.svg?branch=0-1-15-0)](https://travis-ci.org/Walkersneps/SnepsUtils)
